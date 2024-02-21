@@ -78,7 +78,7 @@ img{
 
 @media screen and (max-width:1300px){
     .center{
-        transform:scale(.8);
+        transform:scale(.9);
     }
 }
 @media screen and (min-width:1800px){
