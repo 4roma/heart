@@ -13,6 +13,26 @@ section{
     background-size:cover;
     background-position: center;
 }
+p{
+    position:absolute;
+    top:0;
+    font-size:1.8em;
+    color:white;
+    width:500px;
+    height:50px;
+    cursor:default;
+    box-shadow:0px 0px 10px -1px black;
+    backdrop-filter: blur(8px);
+    border-radius:10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow:2px 2px 0px black;
+    animation-name:glow;
+    animation-duration:6s;
+    animation-iteration-count: infinite;
+}
 .center{
     width:600px;
     height:600px;
@@ -64,7 +84,13 @@ img{
     font-size:300px;
     color: rgb(250, 0, 0);
 }
-
+@keyframes glow{
+    50%{
+        box-shadow:0px 0px 20px -1px rgb(255, 20, 20);
+        background: rgba(255, 0, 0, .5);
+        text-shadow:0px 0px 20px white;
+    }
+}
 @keyframes grow1{
     20%{
         transform:scale(1.1);
